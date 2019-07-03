@@ -32,13 +32,19 @@ public class EvenNumTestTest
         boolean number = evennumtest.isEven(64);
        assertEquals(true,number);
     }
+
+    @Test
+    public void testForNotNull()
+    {
+        boolean number = evennumtest.isEven(64);
+        assertNotNull(String.valueOf(false),number);
+    }
+
     @Test
     public void testForNotEven()
     {
         boolean number = evennumtest.isEven(75);
         assertEquals(false,number);
-        //String number = check.checkPower(70);
-        //assertEquals("it is not a power of 4",number);
     }
 
 

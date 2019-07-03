@@ -30,6 +30,11 @@ public class FactorialTest
         String res=ob.intFactorial();
         assertEquals("1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n",res);
     }
+    @Test
+    public void intFactorialCheckNotNull() {
+        String res=ob.intFactorial();
+        assertNotNull("1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n",res);
+    }
 
 
 }

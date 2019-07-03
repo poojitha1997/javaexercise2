@@ -1,9 +1,9 @@
 package main.java.com.stackroute.junit;
 
-import java.util.Scanner;
-
+//program to print the marks of the students
 public class StudentGrade
 {
+    //validating the marks of the student
     public static String readGradeInput(int NumberOfStudent, int[] NGrades)
     {
         if(NumberOfStudent<0  || NumberOfStudent >100)
@@ -41,12 +41,14 @@ public class StudentGrade
         return Result;
     }
 
+    //calculating the average of the marks of the student
     public static String avg(double total,int N){
 
         String s="";
         return s+(total/N);
     }
 
+    //calculating the minimum marks of the student
     public static int min(int[] NGrades, int N)
     {
         int min= NGrades[0];
@@ -61,6 +63,7 @@ public class StudentGrade
         return min;
     }
 
+    //calculating the maximum marks of the students
     public static int max(int[] NGrades, int N)
     {
         int max= NGrades[0];

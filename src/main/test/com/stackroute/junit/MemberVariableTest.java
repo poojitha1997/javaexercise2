@@ -32,6 +32,13 @@ public class MemberVariableTest
         String number = memvar.printValues("poojitha",21,74394);
         assertEquals("Members name:poojitha "+"\n"+"members age:21 "+"\n"+"members salary:74394",number);
     }
+    @Test
+    public void printDetailsFail()
+    {
+        String number = memvar.printValues("poojitha",21,74394);
+        assertNotNull("Members name:vishnu "+"\n"+"members age:21 "+"\n"+"members salary:74394",number);
+    }
+
 
 
 

@@ -1,9 +1,10 @@
 package main.java.com.stackroute.junit;
 
+//program to check if the string is a palindrome
 public class Palindrome
 {
     public String checkPalindrome(String input) {
-        if(input.equals(""))
+        if(input.equals("")) //checking if the string is null
             return "Enter the data";
         else
         {
@@ -11,7 +12,7 @@ public class Palindrome
 
             int length = input.length();
 
-            for (int i = length - 1; i >= 0; i--)
+            for (int i = length - 1; i >= 0; i--) //reversing the string
                 reverse = reverse + input.charAt(i);
 
             if (input.equals(reverse))

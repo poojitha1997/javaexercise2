@@ -2,11 +2,13 @@ package main.java.com.stackroute.junit;
 
 import java.math.BigDecimal;
 
+//program to print the factorial of the highest possible numbers in range
 public class Factorial
 {
     BigDecimal ob = new BigDecimal("234567890000000987654321234567");
     BigDecimal ob2 = new BigDecimal("123456789009876543232456");
 
+    //the method for the long decimals
     public String longFactorial() {
         String outp = "";
         BigDecimal ob1 = new BigDecimal(1);
@@ -26,6 +28,7 @@ public class Factorial
 
     }
 
+    //the method for the int numbers
     public String intFactorial() {
         String outp = "";
         BigDecimal ob1 = new BigDecimal(1);
@@ -46,7 +49,6 @@ public class Factorial
             }
             i++;
         }
-        //System.out.println(ob1);
         return outp;
 
 

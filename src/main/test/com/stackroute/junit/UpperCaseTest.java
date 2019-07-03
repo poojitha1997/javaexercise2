@@ -35,12 +35,17 @@ public class UpperCaseTest
                 "17",t);
     }
 
-
+    public void testForDataFromFileFail() throws Exception {
+        String t=object.readFileAsString("/home/poojitha/Desktop/Data.txt");
+        assertNotNull("THIS IS NOT TXT FILE\n" +
+                "17",t);
+    }
 
     @Test
     public void testForFileLocationNotFound() throws Exception {
         String t=object.readFileAsString("/home/poojitha/Desktop/Bata.txt");
         assertEquals("File location not found",t);
     }
+
 
 }

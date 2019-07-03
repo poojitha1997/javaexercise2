@@ -31,6 +31,14 @@ public class PowerCheckTest
         String number = check.checkPower(64);
         assertEquals("it is power of 4",number);
     }
+
+    @Test
+    public void testForPowerFail()
+    {
+        String number = check.checkPower(64);
+        assertNotNull("it is not power of 4",number);
+    }
+
     @Test
     public void testForNotPower()
     {
